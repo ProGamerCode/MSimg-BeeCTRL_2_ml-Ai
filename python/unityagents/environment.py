@@ -358,7 +358,7 @@ class UnityEnvironment(object):
         memory = {} if memory is None else memory
         value = {} if value is None else value
         if self._loaded and not self._global_done and self._global_done is not None:
-            if isinstance(action, (int, np.int_, float, np.float_, list, np.ndarray)):
+            if isinstance(action, (int, np.int_, float, np.floating, list, np.ndarray)):
                 if self._num_external_brains == 1:
                     action = {self._external_brain_names[0]: action}
                 elif self._num_external_brains > 1:
@@ -381,6 +381,7 @@ class UnityEnvironment(object):
                     raise UnityActionException(
                         "There are no external brains in the environment, "
                         "step cannot take a memory input")
+
             if isinstance(value, (int, np.int_, float, np.float_, list, np.ndarray)):
                 if self._num_external_brains == 1:
                     value = {self._external_brain_names[0]: value}

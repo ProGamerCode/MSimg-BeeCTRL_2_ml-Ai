@@ -54,7 +54,7 @@ public class Ball3DAgent : Agent
             {
                 gameObject.transform.Rotate(new Vector3(1, 0, 0), action_x);
             }
-				
+
 
             if (done == false)
             {
@@ -109,3 +109,4 @@ public class Ball3DAgent : Agent
         ball.transform.position = new Vector3(Random.Range(-1.5f, 1.5f), 4f, Random.Range(-1.5f, 1.5f)) + gameObject.transform.position;
     }
 }
+

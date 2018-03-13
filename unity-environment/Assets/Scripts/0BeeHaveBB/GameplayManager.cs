@@ -28,9 +28,9 @@ public class GameplayManager : MonoBehaviour
 	};
 	GameState state = GameState.Tutorial;
 	
-	PlayerRank rank;					// The rank of the player for the current level.
-	int score;							// The player's score.
-	int lives;							// The player's lives.
+	public PlayerRank rank;					// The rank of the player for the current level.
+	public int score;							// The player's score.
+	public int lives;							// The player's lives.
 
 	void Awake()
 	{

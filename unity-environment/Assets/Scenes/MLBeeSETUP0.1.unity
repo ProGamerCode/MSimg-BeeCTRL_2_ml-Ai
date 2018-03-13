@@ -1555,7 +1555,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22421820, guid: e86af7f42ecf7b245b02ad0e84b462ec, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22421820, guid: e86af7f42ecf7b245b02ad0e84b462ec, type: 2}
       propertyPath: m_SizeDelta.x
@@ -1563,7 +1563,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22421820, guid: e86af7f42ecf7b245b02ad0e84b462ec, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 20
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e86af7f42ecf7b245b02ad0e84b462ec, type: 2}
@@ -3604,6 +3604,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxLives: 5
+  rank: 0
+  score: 0
+  lives: 0
 --- !u!4 &1510928652
 Transform:
   m_ObjectHideFlags: 0
